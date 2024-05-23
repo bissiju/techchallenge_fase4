@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    container_name: app
+    restart: always
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ORDERS_API_URL=http://localhost:3001
+      - PAYMENTS_API_URL=http://localhost:3000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true
