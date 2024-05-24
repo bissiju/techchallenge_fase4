@@ -12,6 +12,12 @@ Repositório:
 * Orquestração dem mensageria e filas de eventos para os microsserviços com RabbitMQ.
 * Implantação de banco de dados NoSQL (MongoDB) para os microsserviços "pagamentos" e "produção/pedidos", e mantido SQL (MySQL) para o microsserviço "produtos.
 * Desenvolvimento de testes unitários: framework Jest com cobertura de pelo menos 80% e especificação BDD com Cucumber para o microsserviço "produtos".
+* Proteçao da branch main e PR para build e validação de qualidade de código com Sonar (item realizado no microsserviço payments).
+
+## Repositórios Microsserviços
+[https://github.com/bissiju/techchallenge_fase4_products](https://github.com/bissiju/techchallenge_fase4_products)
+[https://github.com/bissiju/techchallenge_fase4_orders](https://github.com/bissiju/techchallenge_fase4_orders)
+[https://github.com/bissiju/techchallenge_fase4_payments](https://github.com/bissiju/techchallenge_fase4_payments)
 
 ## Requisitos (escopo geral do projeto - todas as fases)
 
@@ -40,37 +46,31 @@ A equipe do restaurante gerencia através de acesso administrativo, além do and
 
 Pré-requisitos:
 - Docker
-- Kubernetes
 
 ### Docker
 
-Para instalação local, executar o comando `docker compose up` na raíz do projeto.
+Para fins de testes locais dos microsserviços, executar o comando `docker network create app-network` para a rede externa.
+Em seguida, `docker compose up` na raíz de cada projeto.
 
-Acessar o localhost na porta 3000: http://localhost:3000
-
-### Kubernetes
-
-Criar imagem do Docker, a partir do diretório raiz: `docker build . -t techchallenge-fase2`
-
-E executar os comandos do Kubernets abaixo:
-
-`cd k8s`
-
-`kubectl apply -f .`
-
-Acompanhar o status:
-
-`kubectl get pods` e `kubectl logs --follow <pod-name>`
-
-Quando finalizado acessar o localhost na porta 31000: http://localhost:31000
+Acessar o localhost na porta 8000: http://localhost:8000
 
 ### Endpoints API
 
-Arquivo Postman Collection: /TechChallenge-Fase2.postman_collection.json
+Arquivo Postman Collection para http://localhost:8000
+/microservices_postman_collection.json
 
-Ajustar a porta de acordo com a instalação realizada (3000 ou 31000).
+## Evidências dos Testes Unitários
 
-Idealmente, seguir a ordenação das endpoints conforme estão dispostas na collection para validação da API.
+Products:
+![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/73311ddd-65b7-403c-9bfa-7343a385c210)
+BDD
+![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/99e7ec0a-bb6d-463a-a3fc-e7d3b8a29dfe)
+
+Orders:
+![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/c169d7c5-9c28-483c-b3bd-2187a28d9a75)
+
+Payments:
+![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/c315bfe8-94f6-4f0e-8d11-93739c923383)
 
 ## Demo
 
