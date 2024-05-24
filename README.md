@@ -3,7 +3,7 @@
 Grupo 42:
 Juliana Bissi Pires - RM 351921
 
-Repositório:
+Repositório Principal:
 [https://github.com/bissiju/techchallenge_fase4](https://github.com/bissiju/techchallenge_fase4)
 
 ## Changelog Fase 4
@@ -15,8 +15,11 @@ Repositório:
 * Proteçao da branch main e PR para build e validação de qualidade de código com Sonar (item realizado no microsserviço payments).
 
 ## Repositórios Microsserviços
+
 [https://github.com/bissiju/techchallenge_fase4_products](https://github.com/bissiju/techchallenge_fase4_products)
+
 [https://github.com/bissiju/techchallenge_fase4_orders](https://github.com/bissiju/techchallenge_fase4_orders)
+
 [https://github.com/bissiju/techchallenge_fase4_payments](https://github.com/bissiju/techchallenge_fase4_payments)
 
 ## Requisitos (escopo geral do projeto - todas as fases)
@@ -62,17 +65,17 @@ Arquivo Postman Collection para http://localhost:8000
 ## Evidências dos Testes Unitários
 
 Products:
+
 ![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/73311ddd-65b7-403c-9bfa-7343a385c210)
+
 BDD
+
 ![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/99e7ec0a-bb6d-463a-a3fc-e7d3b8a29dfe)
 
 Orders:
+
 ![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/c169d7c5-9c28-483c-b3bd-2187a28d9a75)
 
 Payments:
+
 ![image](https://github.com/bissiju/techchallenge_fase4/assets/71803301/c315bfe8-94f6-4f0e-8d11-93739c923383)
-
-## Demo
-
-Vídeo demonstrativo:
-https://youtu.be/u0jHQteXp40
